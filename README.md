@@ -1,7 +1,11 @@
 ImageUploadHelper
 =================
 
-A HTML5 file input addon for make a preview of the files.
+## A HTML5 file input addon for make a preview of the files.
+* This is a Jquery plugin!
+* Boostrap ready!
+This means default settings ready for bootstrap.
+* Multiple file support!
 
 Example
 =================
@@ -26,6 +30,8 @@ jQuery('input[name="image"]').ImageUploadHelper({
 	}
 });
 ```
+
+[![example](http://imageshack.com/a/img600/5654/f47k.png)](#example)
 
 Attributes
 ==================
