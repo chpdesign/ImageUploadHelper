@@ -31,6 +31,35 @@ jQuery('input[name="image"]').ImageUploadHelper({
 });
 ```
 
+Extended example
+==================
+```javascript
+jQuery('input[name="image"]').ImageUploadHelper({
+	maxNumberOfFiles: 3,
+	higherNumberOfFiles: function(){
+		jQuery(this).each(function(i,elem){
+			jQuery(elem).val('');
+		});
+		jQuery(this).change();
+		console.log("More than 3!");
+	},
+	fileLoaded: function(file,fr){
+		//jQuery('span:first',jQuery(this).parent()).text(file.name);
+	},
+	allFileLoaded: function(files,frs){
+		var string = "";
+		jQuery.each(files,function(a,file){
+			string += ", "+file.name;
+		});
+		jQuery('span:first',jQuery(this).parent()).text(string.substring(2));
+		//jQuery(this).prev().text(files.length);
+	}
+});
+```
+
+Test image
+=======
+
 [![example](http://imageshack.com/a/img600/5654/f47k.png)](#example)
 
 Attributes
