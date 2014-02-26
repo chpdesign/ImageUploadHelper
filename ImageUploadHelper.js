@@ -91,7 +91,7 @@
 							if(isFunction(options.fileTemplate))
 								var fileTemplate = options.fileTemplate.apply(element,[file,fr]);
 							else
-								var fileTemplate = options.fileTemplatefileTemplate.replace('{fr.result}',fr.result);
+								var fileTemplate = options.fileTemplate.replace('{fr.result}',fr.result);
 							jQuery(datafor).append(fileTemplate);
 						};
 						var beforeAppend = function(){
@@ -158,7 +158,7 @@
 							if(isFunction(options.fileTemplate))
 								var fileTemplate = options.fileTemplate.apply(element,[file,fr]);
 							else
-								var fileTemplate = options.fileTemplatefileTemplate.replace('{fr.result}',fr.result);
+								var fileTemplate = options.fileTemplate.replace('{fr.result}',fr.result);
 							jQuery(datafor).append(fileTemplate);
 						};
 						var beforeAppend = function(){
